@@ -2,7 +2,327 @@
     margin: 0;
     padding: 0;
     font-family:'Poppins', sans-serif;
+    box-siz*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://res.cloudinary.com/dchhocild/image/upload/v1708149679/image6_y0dv0g.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px ;
+}
+nav ul li a{
+    color:#fff ;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 25%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+span{
+    color:#ff004f;
+}
+
+/* ------about---- */
+#about{
+    padding: 80px 0;
+    color: a #ababaa;;
+}
+.about-image{
+    width: 50%;
+}
+.row{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%; /* column size */
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.about-col-2{
+    flex-basis:60% ;
+
+}
+.Heading{
+    font-size:60px;
+    font-weight: 600;
+    color: #ff004f;
+}
+.tab-tiles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight:500 ;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 50%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents span{
+    color: #b54769;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none; /*contents are hidden */
+}
+.tab-contents.active-tab{
+    display: block; /*displays only skills contents*/
+}
+
+
+/* ----contact---- */
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.icons{
+    margin-top: 30px;
+}
+.icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababaa;
+    display: inline-block;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ababaa;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.btn {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+    padding:30px 0 ;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+#certifications{
+    background: #080808;
+    width: 100%;
+    padding: 90px ;
+    padding-bottom: 200px;
+}
+.title h2{
+    color: #ff004f;
+    font-size: 60px;
+    text-align: center;
+    margin: 30px auto;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+.card{
+    height: 250px;
+    width: 330px;
+    padding: 25px 30px;
+    border-radius:20px;
+    background: #191919;
+    margin: 15px;
+    text-align: center;
+}
+h5{
+    color: #ff004f;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p{
+    font-size: medium;
+    margin-bottom: 40px;
+}
+.card a.button{
+    text-decoration: none;
+    color:#fff;
+    border:2px solid #ff004f;
+    background-color:#ff004f ;
+    border-radius: 30px;
+    padding: 9px 22px;
+    font-weight: bold;
+    transition: .4s;
+}
+.card a.button:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*----csss for small screen */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    #header{
+        background-image: url(https://res.cloudinary.com/dchhocild/image/upload/v1708156215/image2_g2rbhj.jpg);
+        
+        .header-text{
+            margin-top: 100%;
+            font-size: small;
+        }
+        .header-text h1{
+            font-size: 30px;
+        }
+        nav .fa-solid{
+            display: block;
+            font-size: 25px;
+
+        }
+        nav ul{
+            background-color: #ff004f;
+            position: fixed;
+            top:0;
+            right: 0;
+            right: -150px;
+            width: 150px;
+            height: 100vh;
+            padding-top: 50px;
+            transition: 0.5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+
+        }
+    
+    }
+    #about{
+        .Heading{
+            font-size: 40px;
+
+        }
+        .about-col-1, .about-col-2{
+            flex-basis: 100%;
+        }
+        .about-col-1{
+            margin-bottom: 30px;
+        }
+        .about-col-2{
+            font-size:14px;
+        }
+    }
+    #certifications{
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+       .card{
+        border-radius: 5px;
+        padding: 20px;
+        width:300px;
+        margin: 10px;
+       }
+    }
+    
+}
+
+ing: border-box;
 }
 html{
     scroll-behavior: smooth;
