@@ -11,14 +11,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                  <img src="images/logo.png" class="logo">
-                  <ul>
+                  <img src="https://res.cloudinary.com/dchhocild/image/upload/v1708149608/logo_q0ifvv.png" class="logo">
+                  <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="images/madhu.pdf">Resume</a></li>
+                    <li><a href="https://res.cloudinary.com/dchhocild/image/upload/v1708150204/madhu_sgikgw_g8zimh_nvo4ql.jpg">Resume</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                   </ul>
+                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
          <div class="header-text">
             <p>Software Engineering</p>
@@ -31,7 +33,7 @@
         <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/image5.png" class="about-image">
+                        <img src="https://res.cloudinary.com/dchhocild/image/upload/v1708149510/image5_patnbu.jpg" class="about-image">
                     </div>
                     <div class="about-col-2">
                         <h1 class="Heading">About Me</h1>
@@ -71,9 +73,9 @@
             <div class="card">
                 <h5>Python</h5>
                 <div class="para">
-                    <p>Course completion certificaation by Google</p>
+                    <p>Course completion certification by Google</p>
 
-                    <p style="text-align: center;"><a  class="button" href="#">Read More</a></p>
+                    <p style="text-align: center;"><a  class="button" href="https://res.cloudinary.com/dchhocild/image/upload/v1708150302/Coursera_K628H7464ZDW_dbmyec_sluq1n.jpg">Read More</a></p>
                 </div>
             </div>
 
@@ -81,19 +83,19 @@
             <div class="card">
                 <h5>Java</h5>
                 <div class="para">
-                    <p>Course completion certificaation by Google</p>
+                    <p>Course completion certification by Infispringboard</p>
 
-                    <p style="text-align: center;"><a  class="button" href="#">Read More</a></p>
+                    <p style="text-align: center;"><a  class="button" href="https://res.cloudinary.com/dchhocild/image/upload/v1708150903/1-60f7c956-69a0-4f65-9904-8fc8c6f5296d_j64luf_xhly8h.jpg">Read More</a></p>
                 </div>
             </div>
 
             <div class="card">
                 <h5>Html and CSS</h5>
                 <div class="para">
-                    <p>Course completion certificaation by Google</p>
+                    <p>Course completion certificaation by Udemy</p>
 
                     <p style="text-align: center;">
-                        <a  class="button" href="#">Read More</a>
+                        <a  class="button" href="https://res.cloudinary.com/dchhocild/image/upload/v1708150401/UC-c509307a-eb55-4b3f-a94f-f54b7ccafb46_zndbcz_troi1u.jpg">Read More</a>
                     </p>
                 </div>
             </div>
@@ -140,6 +142,17 @@
             }
            document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+    <script>
+        var side=document.getElementById("sidemenu");
+
+        function openmenu(){
+            side.style.right='0';
+        }
+        function closemenu(){
+            side.style.right='-230px';
+        }
+        
     </script>
 </body>
 </html>
